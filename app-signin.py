@@ -11,7 +11,7 @@ def lenovoClubApp():
     start_app("com.lenovo.club.app")
     wait(Template(r"tpl1604215748131.png", record_pos=(0.39, 0.81), resolution=(720, 1280)))
     touch(Template(r"tpl1604215878716.png", record_pos=(0.397, 0.807), resolution=(720, 1280)))
-    if exists(Template(r"tpl1604216126981.png", record_pos=(-0.15, -0.578), resolution=(720, 1280))) == False :
+    if exists(Template(r"tpl1604215907148.png", record_pos=(-0.167, -0.576), resolution=(720, 1280))):
          touch(Template(r"tpl1604215907148.png", record_pos=(-0.167, -0.576), resolution=(720, 1280)))
     stop_app("com.lenovo.club.app")
 
@@ -50,7 +50,8 @@ def jdApp():
     touch(Template(r"tpl1604236374277.png", record_pos=(0.014, -0.516), resolution=(1080, 1920)))
     sleep(5.0)
     stop_app("com.jingdong.app.mall")
-    
+
+#快手-签到    
 def ksApp():
     home
     start_app("com.kuaishou.nebula")
@@ -64,7 +65,8 @@ def ksApp():
     touch(Template(r"tpl1604336276451.png", record_pos=(0.351, 0.527), resolution=(1080, 1920)))
     sleep(5.0)
     stop_app("com.kuaishou.nebula")
-    
+
+#拼多多-签到    
 def pddApp():
     home
     start_app("com.xunmeng.pinduoduo")
@@ -96,6 +98,7 @@ sleep(8.0)
 
 pddApp()
 sleep(8.0)
+
 
 
 
