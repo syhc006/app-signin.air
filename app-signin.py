@@ -48,18 +48,57 @@ def jdApp():
     touch(Template(r"tpl1604236343464.png", record_pos=(-0.186, 0.018), resolution=(1080, 1920)))
     wait(Template(r"tpl1604236363906.png", record_pos=(0.003, -0.521), resolution=(1080, 1920)))
     touch(Template(r"tpl1604236374277.png", record_pos=(0.014, -0.516), resolution=(1080, 1920)))
-    sleep(2.0)
+    sleep(5.0)
     stop_app("com.jingdong.app.mall")
-
+    
+def ksApp():
+    home
+    start_app("com.kuaishou.nebula")
+    wait(Template(r"tpl1604335914241.png", record_pos=(-0.406, -0.755), resolution=(1080, 1920)))
+    touch(Template(r"tpl1604335914241.png", record_pos=(-0.406, -0.755), resolution=(1080, 1920)))
+    wait(Template(r"tpl1604336057201.png", record_pos=(-0.306, 0.019), resolution=(1080, 1920)))
+    touch(Template(r"tpl1604336057201.png", record_pos=(-0.306, 0.019), resolution=(1080, 1920)))
+    wait(Template(r"tpl1604336208067.png", record_pos=(-0.297, 0.446), resolution=(1080, 1920)))
+    swipe(Template(r"tpl1604336219438.png", record_pos=(-0.299, 0.446), resolution=(1080, 1920)), vector=[0.1165, -0.5629])
+    wait(Template(r"tpl1604336276451.png", record_pos=(0.351, 0.527), resolution=(1080, 1920)))
+    touch(Template(r"tpl1604336276451.png", record_pos=(0.351, 0.527), resolution=(1080, 1920)))
+    sleep(5.0)
+    stop_app("com.kuaishou.nebula")
+    
+def pddApp():
+    home
+    start_app("com.xunmeng.pinduoduo")
+    wait(Template(r"tpl1604336858439.png", record_pos=(0.003, -0.09), resolution=(1080, 1920)))
+    touch(Template(r"tpl1604336858439.png", record_pos=(0.003, -0.09), resolution=(1080, 1920)))
+    sleep(5.0)
+    if exists(Template(r"tpl1604336932155.png", record_pos=(-0.005, 0.3), resolution=(1080, 1920))):
+        touch(Template(r"tpl1604336932155.png", record_pos=(-0.005, 0.3), resolution=(1080, 1920)))    
+    sleep(5.0)
+    if exists(Template(r"tpl1604336993194.png", record_pos=(0.001, 0.143), resolution=(1080, 1920))):
+        touch(Template(r"tpl1604336993194.png", record_pos=(0.001, 0.143), resolution=(1080, 1920)))
+    sleep(5.0)
+    stop_app("com.xunmeng.pinduoduo")
+    
 lenovoClubApp()
-sleep(15.0)
+sleep(8.0)
 
 smzdmApp()
-sleep(15.0)
+sleep(8.0)
 
 wmrsApp()
-sleep(15.0)
+sleep(8.0)
 
 # jdApp()
-# sleep(15.0)
+# sleep(8.0)
+
+ksApp()
+sleep(8.0)
+
+pddApp()
+sleep(8.0)
+
+
+
+
+
 
